@@ -3,7 +3,7 @@ const buscarBtn = document.getElementById('buscarBtn');
 const resultadosDiv = document.getElementById('resultados');
 
 buscarBtn.addEventListener('click', async () => {
-    const url = `http://${process.env.VERCEL_URL}/wikipedia?query=José_Félix_Uriburu`;
+    const url = `https://prueba-archivo-infame.vercel.app/wikipedia?query=José_Félix_Uriburu`;
 
     try {
         const response = await fetch(url);
