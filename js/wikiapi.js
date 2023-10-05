@@ -46,7 +46,7 @@ const buscarBtn = document.getElementById('buscarBtn');
 const resultadosDiv = document.getElementById('resultados');
 
 buscarBtn.addEventListener('click', async () => {
-    const url = `https://cors-anywhere.herokuapp.com/https://es.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=true&titles=José_Félix_Uriburu`;
+    const url = `https://es.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&exintro=true&titles=José_Félix_Uriburu`;
 
     try {
         const response = await fetch(url);
