@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/agob.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/anexo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../src/img/favicon.ico">
+    <title>Archivo Infame</title>
+</head>
+<body>
+    <section id="mainContainer">
+        <img src="../src/img/AI.png" id="logo">
+            <button type="button" class="btn" id="Home"><b>Home</b></button>
+            <button type="button" class="btn" id="Anexo"><b>Anexo</b></button>
+            <button type="button" class="btn" id="Galería"><b>Galería</b></button>
+            <button type="button" class="btn" id="Extra"><b>Extra</b></button>
+            <div id="searchContainer">
+                <input type="text" class="searchBox" id="json" placeholder="Buscar...">
+            </div>
+    </section>
+    <section id="popupContainer">
+        <div id="filterContainer">
+        </div>
+        <div id="cardContainer">
+        </div>
+        <div id="noRes">
+        </div>
+    </section>
+    <section id="selectionContainer">
+        <div class="option">
+          <button class="optionBtn" id="0">
+            <img class="optionImg" src="../src/img/José_Félix_Uriburu.jpg" alt="">
+          </button>
+          <a class="optionText" href="">José Félix Uriburu</a>
+        </div>
+        <div class="option">
+          <button class="optionBtn" id="1">
+            <img class="optionImg" src="../src/img/Presidente_Agustín_Pedro_Justo.png" alt="">
+          </button>
+          <a class="optionText" href="">Agustín Pedro Justo</a>
+        </div>
+        <div class="option">
+          <button class="optionBtn" id="2">
+            <img class="optionImg" src="../src/img/Robertomortiz.jpg" alt="$">
+          </button>
+          <a class="optionText" href="">Roberto Ortiz</a>
+        </div>
+        <div class="option">
+          <button class="optionBtn" id="3">
+            <img class="optionImg" src="../src/img/Ramoncastillo.jpg" alt="$">
+          </button>
+          <a class="optionText" href="">Ramón Castillo</a>
+        </div>
+      </section>
+    <script src="../js/filters.js"></script>
+    <script src="../js/searchbox.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/anexo.js"></script>
+    <script src="../js/galeriabtn.js"></script>
+</body>
+</html>

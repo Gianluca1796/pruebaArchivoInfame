@@ -1,0 +1,7 @@
+body {
+    background-color: rgb(4, 2, 4);
+    background-image: url(../src/img/load.gif);
+    background-position-x: 50%;
+    background-position-y: -210%;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,260 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(179, 81, 81);
+}   
+
+a:active {
+    text-decoration: dashed;
+    color: salmon;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+a:hover:visited {
+    color: rgb(160, 69, 245);
+}
+
+a:active:visited {
+    color: rgb(244, 92, 236);
+}
+
+#filterContainer {
+    display: block;
+    position: absolute;
+    margin-left: 40%;
+}
+
+#mainContainer {
+    user-select: none;  
+    width: auto;
+    background-color: rgb(18, 18, 18,.85);
+    display: flex;
+    gap: 3%;
+}
+
+#panel {
+    background-color: rgba(255, 255, 255);
+    user-select: none;
+    border: rgba(255, 255, 255) 8px solid;
+    border-radius: 6px; 
+    padding: 6px;
+    width: fit-content;
+    margin-top: 24px;
+}
+
+#panel1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.filtro {
+    font-family: Arial;
+    text-align: center;
+    font-size: 24px;
+    color: brown;
+    background: none;
+    border: none;
+    border-left: rgba(184, 244, 245,0) 0px solid;
+    border-top: rgba(0, 0, 0) 2px solid;
+    transition: 0.1s;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.filtro [open] {
+    animation: forwards 500ms;
+}
+
+.filtro:first-child {
+    border-top: none;   
+}
+
+.filtro:first-child:hover {
+    border-top: none;
+}
+
+.filtro:first-child:active {
+    border-top: none;
+}
+
+.filtro:hover {
+    border: none;
+    color: rgb(179, 81, 81);
+    font-weight: none;
+    border-left: rgba(184, 244, 245) 6px solid;
+    border-top: rgba(0, 0, 0) 2px solid;
+    transition: 0.1s;
+}
+
+.filtro:active {
+    border: none;
+    color: salmon;
+    font-weight: none;
+    border-left: rgba(255, 213, 33) 1px solid;
+    border-top: rgba(0, 0, 0) 2px solid;
+    transition: 0.1s;
+}
+
+.filtro:visited {
+    color: brown;
+}
+
+.filtro:hover:visited {
+    color: rgb(179, 81, 81);
+}
+
+.filtro:active:visited {
+    color: salmon;
+}
+
+#logo {
+    margin-left: 2%;
+    width: 25%;
+    border: none;
+    border-left: rgb(30, 116, 253) 4px solid;
+    border-right: rgb(30, 116, 253) 4px solid;
+    border-bottom: rgb(30, 116, 253) 4px solid;
+}
+
+.btn {
+    font-size: 32px;
+    margin-top: 12px;
+    border: none;
+    background-color: transparent;
+    border-bottom: rgb(30, 116, 253) 4px solid;
+    color: rgb(30, 116, 253);
+    transition: 0.1s;
+}
+
+.btn:hover {
+    margin-top: 18px;
+    border-bottom: rgb(184, 244, 245) 6px solid;
+    color: rgb(184, 244, 245);
+    transition: 0.1s;
+}
+
+.btn:active {
+    margin-top: 24px;
+    border-bottom: rgb(255, 213, 33) 1px solid;
+    color: rgb(255, 213, 33);
+}
+
+#home {
+    font-size: 32px;
+    margin-top: 12px;
+    border: none;
+    background-color: transparent;
+    border-bottom: rgb(30, 116, 253) 4px solid;
+    color: rgb(30, 116, 253);
+    transition: 0.1s;
+}
+
+.searchBox {
+    position: absolute;
+    top: 4%;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 16px;
+    margin-right: 2%;
+    width: 10%;
+    padding-left: 12px;
+    height: 33px;
+    border: rgba(30, 116, 253, 0) 3px solid;
+    outline: rgba(30, 116, 253, 0) 1px solid;
+    outline-offset: -6px;
+    border-radius: 100px;
+    transition: 0.2s;
+}
+
+.searchBox:hover {
+    background-color: azure;
+    transition: 0.2s;
+}
+
+.searchBox:focus {
+    width: 20%;
+    height: -6px;
+    border: rgb(30, 116, 253) 3px solid;
+    outline: none;
+    outline-offset: none;
+    transition: 0.2s;
+}
+
+#cardContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.card-img-top {
+    width: 40%;
+    border-right: black 2px solid;
+}
+
+.cardPres {
+    background-color: aliceblue;
+    object-fit: contain;
+    border: none;
+    transform: translate(432%, 8%);
+    font-family: 'Franklin Gothic Medium';
+    display: flex;
+    width: 280px;
+    height: 140px;
+    gap: 4px;
+}
+
+.card-title {
+    font-size: 14px;
+}
+
+.card-subtitle {
+    color: rgb(80, 80, 80);
+    margin-block-start: 1.8em;
+    margin-right: 2px;
+    font-weight: normal;
+    font-size: 14px;
+    padding-left: none;
+}
+
+.card-body {
+    gap: none;
+}
+
+.card-inner-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardNingunRes {
+    background-color: aliceblue;
+    object-fit: contain;
+    border: none;
+    position: absolute;
+    transform: translate(432%, 8%);
+    font-family: 'Franklin Gothic Medium';
+    display: flex;
+    width: 280px;
+    height: 140px;
+    gap: 4px;
+}
+
+#footer {
+    position: relative;
+    color: white;
+    margin-top: 5%;
+    background-color: black;
+}
